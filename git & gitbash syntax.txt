@@ -1,0 +1,41 @@
+git config --add --global user.name MJ_ROCKSTAR >> ad	d name
+
+git config --add --global user.email "mohammedjinia@gmail.com"  >>Add email id
+
+touch .gitignore  >>Create empty git files
+$ git init >>Initialized empty Git repository in C:/Project/Jupyter_Notebook/Project-1/Analog-Clock/.git/
+  
+$ git add . >> This will add the content to the staging area
+ $ git commit -m "Initial commit" >>   Taking snapshot
+$ git status  >> This will show the status of your git repository [ Positive indication: On branch master nothing to commit, working tree]
+clean]
+
+$ git remote add origin git@github.com:JINIA-SYS/Clock-Webpage-1.git>>Linking the Project content files with GITHUB Repository using its SSH Link
+
+
+git push origin master>>Pushing content to repository[But it will fail for private in first time as authentication ssh key will be asked]
+
+
+
+ssh-keygen -t rsa -b 4096 -C "mohammedjinia@gmail.com"  >>This will generate the Authentication Key 
+
+Output: 
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\moham/.ssh/id_rsa): C:\Users\moham\Desktop\GIT\GIT_SSH_Keys.txt
+C:\Users\moham\Desktop\GIT\GIT_SSH_Keys.txt already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\moham\Desktop\GIT\GIT_SSH_Keys.txt
+Your public key has been saved in C:\Users\moham\Desktop\GIT\GIT_SSH_Keys.txt.pub
+The key fingerprint is:
+SHA256:f8FaxYh2drCPGJC9DXd8LsexOp2unV/iqGPfghOgeBs mohammedjinia@gmail.com
+
+/C/Users/moham/Desktop/GIT/GIT_SSH_Keys.txt.pub>>The Location where key is saved
+
+
+$ cat /C/Users/moham/Desktop/GIT/GIT_SSH_Keys.txt.pub >> this will display new SSH Key
+
+SSH Key generated:-  
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG5VGFlyuijJXIGWW46c+58WXBPAHMvl4/f1vLniYh1MEWdYipgNJhMnAcLYip85rYIhKNf80ESHpoHTsnxsCt3eNG4eKYQFhnocubjebDPZ7Pb+9ZLQL6zWswfMxX7IoLVhtLgKl1KY8TkYzYO0bOkkKmbRhWmc4FRoafRuJlphXRxUeVvl6TT5AwBaIlUpEFfHnZZSReUQmg5Ay+Zaig7gmP3zZA3Wdxg4j6xotcgchxktaR0Wob5MLiAvoUL4anlInizbzR3vwI5zrhMBY2FmI2TjzzqpSj1UPp9Be/xm4Xgt4ZbAQ7yNI4GHjR5p3YlEVx6ULFSI209bQ0iAemitls+NwruLH9KxwppKLg1tDPfYIufhD3Sk0U3PtbBWT7DYkwYAFHItoJvTbwo3yWCDhKTJmMe9ZKenLiT4KSjTsvzm7LtUz2OWxFZkeQ52nbWKIyKCgNF8Srh7A6rdjTZTNUa/omiA2lZzuGaC5sypc3ywMsIvwhhonyO9C1LnIlc8e7U+bI0iL8Qq0CrcASIFjLRuUwD9muoI6gZT1mY9+O/5NAy6sitmcsO6g4LW6tBthF2TVia1CGqKRqlIaHi5MR1hzStBdNhGrju/YJKcrsOkSNjKlMJl7d9Q5DU6Lmkuyg+WX8OuSpJ9+yQbiqeeKgmGQmaV4eLcK4hFDqvQ== mohammedjinia@gmail.com
